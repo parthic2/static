@@ -1,0 +1,119 @@
+.concept-card-container {
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 19.5rem;
+  border: 2px solid var(--light-gray);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.concept-card-img-container {
+  position: relative;
+  height: 100px;
+}
+
+.concept-box {
+  position: absolute;
+  bottom: -0.7rem;
+  left: .7rem;
+  padding-left: .2rem;
+  padding-right: 2px;
+
+  /* I added another all colors for the other concepts so you can use it using css varibles */
+
+  color: #ffffff;
+}
+
+.concept-box-teacher-name {
+/*  position: absolute;*/
+/*  bottom: -0.7rem;*/
+/*  left: .7rem;*/
+/*  padding-left: .2rem;*/
+/*  padding-right: 2px;*/
+/*  !* I added another all colors for the other concepts so you can use it using css varibles *!*/
+  background-color: #5d71ea;
+  color: #ffffff;
+  font-size: 0.7rem;
+}
+
+.concept-card-img-container img {
+  object-fit: cover;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+.playlist-text {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: var(--black);
+}
+
+.playlist-description {
+  font-size: .8rem;
+  font-weight: normal;
+}
+
+
+/*.outline_rounded_rect, .border_for_whole_thing, .the_picture, .image-container {*/
+/*  width: 195px;*/
+/*  height: 186px;*/
+/*}*/
+
+/*.border_for_whole_thing {*/
+/*  background: rgba(255, 255, 255, 1);*/
+/*  border: 1px solid rgba(0, 0, 0, 0.20000000298023224);*/
+/*  border-radius: 10px;*/
+/*  box-shadow: 6px 5px 15px rgba(0, 0, 0, 0.10999999940395355);*/
+/*}*/
+
+/*.the_picture, .image-container {*/
+/*  top: 0px;*/
+/*  left: 1px;*/
+/*  border-radius: 9px;*/
+/*}*/
+
+/*.image-container img {*/
+/*  width: 100%;*/
+/*  height: 100%;*/
+/*  object-fit: cover;*/
+/*  object-position: center center;*/
+/*}*/
+
+/*.stars_area {*/
+/*  width: 54px;*/
+/*  height: 10px;*/
+/*  background: rgba(57, 57, 57, 1);*/
+/*  top: 150px;*/
+/*  left: 10px;*/
+/*}*/
+
+/*.stars_avg_rating, .total_ratings, .total_participants, .concept_name_section, .category_label {*/
+/*  color: rgba(0, 0, 0, 1);*/
+/*  font-weight: normal;*/
+/*  font-size: 10px;*/
+/*}*/
+
+/*.total_participants {*/
+/*  font-weight: normal;*/
+/*}*/
+
+/*.concept_name_section {*/
+/*  font-size: 14px;*/
+/*  z-index: 1;*/
+/*}*/
+
+/*.category_box_color {*/
+/*  width: 65px;*/
+/*  height: 10px;*/
+/*  background: rgba(156, 96, 204, 1);*/
+/*  top: 85px;*/
+/*  left: 10px;*/
+/*}*/
+
+/*.category_label {*/
+/*  color: rgba(255, 255, 255, 1);*/
+/*  font-weight: lighter;*/
+/*  font-size: 9px;*/
+/*}*/

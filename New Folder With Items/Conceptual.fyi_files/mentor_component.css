@@ -1,0 +1,81 @@
+.mentor-item {
+  display: flex;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+.mentor-img:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 5px;
+  right: 0px;
+  background-image: linear-gradient(to right, #8ee7f5, var(--app-primary));
+  border-radius: 50%;
+}
+
+.mentor-info {
+  font-size: 1.4rem;
+  position: relative;
+  width: 100%;
+  /*padding-left: 10px;*/
+}
+
+.mentor-name {
+  color: var(--app-primary);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.mentor-bio {
+  font-weight: normal;
+  font-size: .9rem;
+  margin-top: 5px;
+  /*max-width: 200px;*/
+}
+
+
+
+
+
+
+
+
+
+
+.mentor-img {
+  background-image: linear-gradient(to right, #8ee7f5, var(--app-primary));
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 2px;
+  position: relative;
+}
+
+.mentor-img img {
+  background: var(--app-placeholder);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.mentor-component {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  width: fit-content;
+}
+
+.mentor-img-container {
+  background-color: var(--light-gray);
+  height: 6.7rem;
+  width: 6.7rem;
+  border-radius: 50%;
+}
+
+
+.mentor-name {
+  font-weight: 600;
+}

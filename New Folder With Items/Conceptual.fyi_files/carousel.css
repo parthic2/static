@@ -1,0 +1,78 @@
+.carousel {
+  display: flex;
+  /* DO NOT CHANGE THIS otherwise you get wrapped entries */
+  /*flex-direction: row; !* horizontal scrolling *!*/
+  flex-wrap: nowrap;
+  /* prevents items from wrapping */
+  overflow-x: scroll;
+  /* enables horizontal scrolling */
+  /*min-width: 3000px; !* arbitrary large value to prevent wrapping; adjust as needed *!*/
+  scroll-snap-type: x mandatory;
+  /* enables snapping to items */
+  scroll-padding: 0px;
+  /* adds padding to the right of the carousel */
+  gap: 1rem;
+  /* adds space between items */
+  padding: 10px 0px;
+}
+
+.carousel-subjects {
+  gap: 0rem;
+  /* adds space between items */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-cell {
+  /* remove for proper width in card width */
+  /* width: min-content; */
+  /* this extends the box to the longest word */
+  height: auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  background: #FFFFFF;
+  float: left;
+  border-radius: 2px;
+  flex-grow: 0;
+  /* prevents items from growing */
+  flex-shrink: 0;
+  /* prevents items from shrinking */
+  flex-basis: 140px;
+  /* control this instead of width of anything */
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  background: #FFFFFF;
+}
+
+.mentor-display-htmx {
+  min-width: 340px;
+}
+
+.top-level-categories {
+  min-width: 140px;
+}
+
+.concepts-display-htmx {
+  min-width: 195px;
+}
+
+/* Add my custom card css for remove border */
+.card {
+  border: 0 !important;
+}
+
+.carousel-inner {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+
+@media (max-width: 767px) {
+  .carousel-inner {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}

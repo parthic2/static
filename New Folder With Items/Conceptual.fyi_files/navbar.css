@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/*html {*/
+/*  box-sizing: border-box;*/
+/*  font-size: 82.5%;*/
+/*}*/
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*:root {*/
+/*  --black: #000000;*/
+/*  --white: #ffffff;*/
+/*  --dark-blue: #293d58;*/
+/*  --gray: #d4e6fd;*/
+/*  --light-gray: #b8c5d0;*/
+/*  --light-gray2: #b2aeaf;*/
+/*  --light-blue: #5d71ea;*/
+/*  --purple-color: #6e84d2;*/
+/*  --purple2-color: #5e78d4;*/
+/*  --green-color: #11c89c;*/
+/*  --pink-color: #9d60cc;*/
+/*  --red-color: #e96464;*/
+/*}*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding: 1rem;
+  align-items: center;
+
+  background: linear-gradient(270deg, #92e6f1 0%, rgba(255, 255, 255, 0) 100%),
+    #5d71ea;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.dropmenu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  position: relative;
+}
+
+.dropmenu-list {
+  position: absolute;
+  top: 120%;
+  right: 0;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+
+  background-color: var(--dark-blue);
+  border-radius: 4px;
+  width: 200px;
+  transition: all ease-out 0.3s;
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropmenu-list ul {
+  z-index: 2;
+  list-style: none;
+  padding: 10px;
+  font-size: 1.4rem;
+}
+.dropmenu-list li a {
+  z-index: 2;
+  text-decoration: none;
+  color: var(--light-gray);
+}
+
+.dropmenu-list ul:first-child {
+  z-index: 2;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+
+.dropmenu-btn {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  cursor: pointer;
+}
+.person-icon {
+  color: var(--dark-blue);
+  font-size: 2rem;
+}
+
+.search-form {
+  display: flex;
+  gap: 5px;
+  height: 100%;
+}
+
+.search-form input {
+  padding: 1px 15px;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+}
+.search-form button {
+  padding: 5px;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--dark-blue);
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .search-form {
+    display: none;
+  }
+}
+

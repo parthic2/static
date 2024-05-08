@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8000/ -->
+<html lang="en" class="hydrated">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style data-styles="">
+			ion-icon {
+				visibility: hidden;
+			}
+			.hydrated {
+				visibility: inherit;
+			}
+		</style>
+		<meta name="viewport" content="width=device-width, initial-scale=0.9" />
+
+		<title>Conceptual.fyi</title>
+
+		<meta name="description" content="Educational concepts ." />
+		<meta name="author" content="Jeremy Langley" />
+		<link
+			href="http://localhost:8000/static/images/favicons/favicon.ico"
+			rel="icon"
+		/>
+		<link
+			href="./Conceptual.fyi_files/main.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="./Conceptual.fyi_files/navbar.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="./Conceptual.fyi_files/logo.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="./Conceptual.fyi_files/individual_concept.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="./Conceptual.fyi_files/mentor_component.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="./Conceptual.fyi_files/carousel.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="./Conceptual.fyi_files/flickity.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="./Conceptual.fyi_files/career-component.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com/" />
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+		<link href="./Conceptual.fyi_files/css2" rel="stylesheet" />
+
+		<style>
+			/* Add this code to the existing base.css file */
+
+			.btn {
+				background-color: var(--link-color);
+				color: #ffffff;
+				padding: 0.5rem 1rem;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+				text-align: center;
+				display: inline-block;
+				font-size: 1rem;
+			}
+
+			.btn:hover {
+				background-color: var(--link-hover-color);
+			}
+
+			.btn:active {
+				background-color: var(--link-active-color);
+			}
+
+			.content {
+				min-height: 70vh;
+				display: inline;
+			}
+
+			/* no circle */
+			.flickity-button {
+				background: transparent;
+			}
+
+			/* big previous & next buttons */
+			.flickity-prev-next-button {
+				width: 100px;
+				height: 100px;
+			}
+
+			/* icon color */
+			.flickity-button-icon {
+				fill: white;
+			}
+
+			/* hide disabled button */
+			.flickity-button:disabled {
+				display: none;
+			}
+		</style>
+		<link rel="stylesheet" href="./Conceptual.fyi_files/flickity.min.css" />
+
+		<link
+			href="./Conceptual.fyi_files/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+			crossorigin="anonymous"
+		/>
+
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="./Conceptual.fyi_files/bootstrap-icons.css"
+		/>
+
+		<link rel="preconnect" href="https://fonts.gstatic.com/" />
+		<link href="./Conceptual.fyi_files/css2(1)" rel="stylesheet" />
+
+		<!-- Le javascript
+  ================================================== -->
+
+		<script
+			type="text/javascript"
+			async=""
+			src="./Conceptual.fyi_files/mixpanel-2-latest.min.js"
+		></script>
+		<script src="./Conceptual.fyi_files/chart.js"></script>
+
+		<script
+			src="./Conceptual.fyi_files/htmx.org@1.8.4"
+			integrity="sha384-wg5Y/JwF7VxGk4zLsJEcAojRtlVp1FKKdGy1qN+OMtdq72WRvX/EdRdqg/LOhYeV"
+			crossorigin="anonymous"
+		></script>
+
+		<script
+			src="./Conceptual.fyi_files/autocomplete.jquery.min.js"
+			integrity="sha512-HJ+lF1L08pRq/4okkWG+Rsskjy0p1FtkcYX0RhVaHq6J/pwflJumUbmiCBiXdu0UUevBJvMGb2QHfCzXV5TpfQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+
+		<script
+			defer=""
+			src="./Conceptual.fyi_files/bootstrap.min.js"
+			integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+
+		<script src="./Conceptual.fyi_files/navbar_search.js"></script>
+		<script type="text/javascript">
+			(function (f, b) {
+				if (!b.__SV) {
+					var e, g, i, h;
+					window.mixpanel = b;
+					b._i = [];
+					b.init = function (e, f, c) {
+						function g(a, d) {
+							var b = d.split(".");
+							2 == b.length && ((a = a[b[0]]), (d = b[1]));
+							a[d] = function () {
+								a.push([d].concat(Array.prototype.slice.call(arguments, 0)));
+							};
+						}
+
+						var a = b;
+						"undefined" !== typeof c ? (a = b[c] = []) : (c = "mixpanel");
+						a.people = a.people || [];
+						a.toString = function (a) {
+							var d = "mixpanel";
+							"mixpanel" !== c && (d += "." + c);
+							a || (d += " (stub)");
+							return d;
+						};
+						a.people.toString = function () {
+							return a.toString(1) + ".people (stub)";
+						};
+						i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(
+							" ",
+						);
+						for (h = 0; h < i.length; h++) g(a, i[h]);
+						var j = "set set_once union unset remove delete".split(" ");
+						a.get_group = function () {
+							function b(c) {
+								d[c] = function () {
+									call2_args = arguments;
+									call2 = [c].concat(Array.prototype.slice.call(call2_args, 0));
+									a.push([e, call2]);
+								};
+							}
+
+							for (
+								var d = {},
+									e = ["get_group"].concat(
+										Array.prototype.slice.call(arguments, 0),
+									),
+									c = 0;
+								c < j.length;
+								c++
+							)
+								b(j[c]);
+							return d;
+						};
+						b._i.push([e, f, c]);
+					};
+					b.__SV = 1.2;
+					e = f.createElement("script");
+					e.type = "text/javascript";
+					e.async = !0;
+					e.src =
+						"undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL
+							? MIXPANEL_CUSTOM_LIB_URL
+							: "file:" === f.location.protocol &&
+							  "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)
+							? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"
+							: "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+					g = f.getElementsByTagName("script")[0];
+					g.parentNode.insertBefore(e, g);
+				}
+			})(document, window.mixpanel || []);
+
+			// Enabling the debug mode flag is useful during implementation,
+			// but it's recommended you remove it for production
+			mixpanel.init("91aed4d9a9ebfe335ff613644679dfc0", { debug: true });
+			mixpanel.track("Sign up");
+		</script>
+
+		<script type="module" src="./Conceptual.fyi_files/ionicons.esm.js"></script>
+		<script nomodule="" src="./Conceptual.fyi_files/ionicons.js"></script>
+
+		<style>
+			.htmx-indicator {
+				opacity: 0;
+				transition: opacity 200ms ease-in;
+			}
+			.htmx-request .htmx-indicator {
+				opacity: 1;
+			}
+			.htmx-request.htmx-indicator {
+				opacity: 1;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="header">
+			<a href="http://localhost:8000/">
+				<div class="logo-conceptual">
+					<div class="c-container">
+						<div class="circle-big circle-1"></div>
+						<div class="circle-big circle-2"></div>
+						<h1 class="conceptual-text">onceptual</h1>
+					</div>
+				</div>
+			</a>
+
+			<img
+				id="spinner"
+				class="htmx-indicator"
+				src="./Conceptual.fyi_files/bars.svg"
+			/>
+			<div class="header-nav">
+				<form class="search-form">
+					<input
+						type="text"
+						id="navbar_query"
+						placeholder="Search Concepts"
+						required=""
+						list="navbar_query_datalist"
+					/>
+					<!-- <input
+						type="text"
+						id="navbar_query"
+						list="navbar_query_datalist"
+						placeholder="Search Concepts"
+						required=""
+						hx-get="/api/navbar_search/"
+						hx-target="#navbar_query_datalist"
+						hx-trigger="input changed delay:500ms, search"
+						hx-swap="innerHTML"
+						hx-indicator="#spinner"
+					/> -->
+					<datalist id="navbar_query_datalist"></datalist>
+					<button type="submit">
+						<ion-icon
+							name="search-outline"
+							class="search-icon md hydrated"
+							role="img"
+						>
+							<template shadowrootmode="open">
+								<div class="icon-inner">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="ionicon s-ion-icon"
+										viewBox="0 0 512 512"
+									>
+										<path
+											d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+											stroke-miterlimit="10"
+											class="ionicon-fill-none ionicon-stroke-width"
+										></path>
+										<path
+											stroke-linecap="round"
+											stroke-miterlimit="10"
+											d="M338.29 338.29L448 448"
+											class="ionicon-fill-none ionicon-stroke-width"
+										></path>
+									</svg>
+								</div>
+							</template>
+						</ion-icon>
+					</button>
+				</form>
+
+				<div class="dropmenu">
+					<img
+						src="./Conceptual.fyi_files/IMG_2578.jpg"
+						height="30px"
+						width="30px"
+					/>
+
+					<div class="dropmenu-btn">
+						<span>
+							b2b
+						</span>
+						<ion-icon
+							name="caret-down-outline"
+							class="arrow-down-icon md hydrated"
+							role="img"
+							><template shadowrootmode="open"
+								><div class="icon-inner">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										class="ionicon s-ion-icon"
+										viewBox="0 0 512 512"
+									>
+										<path
+											d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"
+										></path>
+									</svg></div></template
+						></ion-icon>
+					</div>
+
+					<div class="dropmenu-list">
+						<ul>
+							<li><a href="http://localhost:8000/teacher">Teacher</a></li>
+							<li><a href="http://localhost:8000/mentor">Mentor</a></li>
+						</ul>
+						<ul>
+							<li><a href="http://localhost:8000/settings">Settings</a></li>
+							<li>
+								<a href="http://localhost:8000/accounts/logout">Logout</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const concepts = [
+					{ name: "Python Dictionaries", slug: "python_dictionaries_52342" },
+					{
+						name: "Standard Deviation",
+						slug: "standard_deviation_923847984948",
+					},
+					// Add more concepts as needed
+				];
+
+				const searchBar = document.getElementById("navbar_query");
+				const datalist = document.getElementById("navbar_query_datalist");
+
+				// Function to filter concepts based on search query
+				function filterConcepts(query) {
+					const filteredConcepts = concepts.filter((concept) =>
+						concept.name.toLowerCase().includes(query.toLowerCase()),
+					);
+					return filteredConcepts;
+				}
+
+				// Function to populate the datalist with filtered concepts
+				function populateDatalist(filteredConcepts) {
+					datalist.innerHTML = "";
+					filteredConcepts.forEach((concept) => {
+						const option = document.createElement("option");
+						option.value = concept.name;
+						datalist.appendChild(option);
+					});
+				}
+
+				// Event listener for form submission
+				searchBar.closest("form").addEventListener("submit", (event) => {
+					event.preventDefault(); // Prevent form submission
+					const query = searchBar.value.trim();
+					const filteredConcepts = filterConcepts(query);
+					populateDatalist(filteredConcepts);
+				});
+
+				// Event listener for input change
+				searchBar.addEventListener("input", () => {
+					const query = searchBar.value.trim();
+					const filteredConcepts = filterConcepts(query);
+					populateDatalist(filteredConcepts);
+				});
+			});
+		</script>
+
+		<!-- For search bar with API -->
+		<!-- <script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const navbarQueryInput = document.getElementById("navbar_query");
+				const datalist = document.getElementById("navbar_query_datalist");
+
+				navbarQueryInput.addEventListener("input", () => {
+					const query = navbarQueryInput.value.trim();
+					if (query.length === 0) {
+						datalist.innerHTML = "";
+						return;
+					}
+
+					fetchSuggestions(query);
+				});
+
+				async function fetchSuggestions(query) {
+					try {
+						const response = await fetch(
+							`http://localhost:8000/api/navbar_search/?q=${query}`,
+						);
+						const data = await response.json();
+						populateSuggestions(data);
+					} catch (error) {
+						console.error("Error fetching suggestions:", error);
+					}
+				}
+
+				function populateSuggestions(suggestions) {
+					datalist.innerHTML = "";
+					suggestions.forEach((suggestion) => {
+						const option = document.createElement("option");
+						option.value = suggestion.name;
+						datalist.appendChild(option);
+					});
+				}
+			});
+		</script> -->
+
+		<script>
+			const navBtn = document.querySelector(".dropmenu-btn");
+
+			navBtn.addEventListener("click", () => {
+				document.querySelector(".dropmenu-list").classList.toggle("active");
+			});
+		</script>
+
+		<!-- End Header -->
+
+		<div class="container">
+			<div class="content">
+				<main class="main">
+					<!-- Mentor Section -->
+					<div class="mentor-section">
+						<div
+							hx-get="/api/suggested_mentors/"
+							hx-target="this"
+							hx-swap="innerHTML"
+							hx-trigger="load"
+							class=""
+						>
+							<div class="container-padding">
+								<div class="row">
+									<div class="col-12">
+										<div class="section-heading">Guidance from mentors</div>
+									</div>
+								</div>
+							</div>
+							<div id="mentors-section" class="carousel">
+								<div class="carousel-cell mentor-display-htmx">
+									<div class="mentor-item">
+										<div class="mentor-img">
+											<a href="http://localhost:8000/api/mentor/None/">
+												<img
+													src="./Conceptual.fyi_files/default.png"
+													alt="Jeremy Langley image"
+													loading="lazy"
+													width="85px"
+													height="85px"
+												/>
+											</a>
+										</div>
+
+										<div class="mentor-info">
+											<a
+												tabindex="0"
+												href="http://localhost:8000/api/mentor/None/"
+											>
+												<div class="mentor-name">Jeremy Langley</div>
+											</a>
+											<div class="mentor-bio">
+												I am a founder on this site, adding my playlist will
+												help you get...
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-cell mentor-display-htmx">
+									<div class="mentor-item">
+										<div class="mentor-img">
+											<a
+												href="http://localhost:8000/api/mentor/captain-america/"
+											>
+												<img
+													src="./Conceptual.fyi_files/captain_america_a48r6RV.jpg"
+													alt="Captain America image"
+													loading="lazy"
+													width="85px"
+													height="85px"
+												/>
+											</a>
+										</div>
+
+										<div class="mentor-info">
+											<a
+												tabindex="0"
+												href="http://localhost:8000/api/mentor/captain-america/"
+											>
+												<div class="mentor-name">Captain America</div>
+											</a>
+											<div class="mentor-bio">
+												I'm a soldier in the US Army. Which made me a lab animal
+												in an ex...
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-cell mentor-display-htmx">
+									<div class="mentor-item">
+										<div class="mentor-img">
+											<a
+												href="http://localhost:8000/api/mentor/captain-marvel/"
+											>
+												<img
+													src="./Conceptual.fyi_files/captain_marvel_XD02Wzf.jpg"
+													alt="Captain Marvel image"
+													loading="lazy"
+													width="85px"
+													height="85px"
+												/>
+											</a>
+										</div>
+
+										<div class="mentor-info">
+											<a
+												tabindex="0"
+												href="http://localhost:8000/api/mentor/captain-marvel/"
+											>
+												<div class="mentor-name">Captain Marvel</div>
+											</a>
+											<div class="mentor-bio">
+												I'm a pilot in the US Air Force. A run in with alien
+												tech changed...
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-cell mentor-display-htmx">
+									<div class="mentor-item">
+										<div class="mentor-img">
+											<a
+												href="http://localhost:8000/api/mentor/stephen-strange/"
+											>
+												<img
+													src="./Conceptual.fyi_files/stephen_strange_VV4YToK.jpg"
+													alt="Dr. Stephen Strange image"
+													loading="lazy"
+													width="85px"
+													height="85px"
+												/>
+											</a>
+										</div>
+
+										<div class="mentor-info">
+											<a
+												tabindex="0"
+												href="http://localhost:8000/api/mentor/stephen-strange/"
+											>
+												<div class="mentor-name">Dr. Stephen Strange</div>
+											</a>
+											<div class="mentor-bio">
+												I'm a gifted neurosurgeon at New York Hospital. I'm also
+												a sorcer...
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-cell mentor-display-htmx">
+									<div class="mentor-item">
+										<div class="mentor-img">
+											<a href="http://localhost:8000/api/mentor/hulk/">
+												<img
+													src="./Conceptual.fyi_files/hulk_E9BIEVF.jpg"
+													alt="Hulk image"
+													loading="lazy"
+													width="85px"
+													height="85px"
+												/>
+											</a>
+										</div>
+
+										<div class="mentor-info">
+											<a
+												tabindex="0"
+												href="http://localhost:8000/api/mentor/hulk/"
+											>
+												<div class="mentor-name">Hulk</div>
+											</a>
+											<div class="mentor-bio">
+												I'm a scientist with 7 Ph.D's working at Caltech
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-cell mentor-display-htmx">
+									<div class="mentor-item">
+										<div class="mentor-img">
+											<a
+												href="http://localhost:8000/api/mentor/natasha-romanoff/"
+											>
+												<img
+													src="./Conceptual.fyi_files/black_widow_ny2JfNk.jpg"
+													alt="Natasha Romanoff image"
+													loading="lazy"
+													width="85px"
+													height="85px"
+												/>
+											</a>
+										</div>
+
+										<div class="mentor-info">
+											<a
+												tabindex="0"
+												href="http://localhost:8000/api/mentor/natasha-romanoff/"
+											>
+												<div class="mentor-name">Natasha Romanoff</div>
+											</a>
+											<div class="mentor-bio">
+												I'm a spy for S.H.I.E.L.D. I'm also known as Black
+												Widow.
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-cell mentor-display-htmx">
+									<div class="mentor-item">
+										<div class="mentor-img">
+											<a href="http://localhost:8000/api/mentor/stan-lee/">
+												<img
+													src="./Conceptual.fyi_files/stanlee_jpnKYpD.jpg"
+													alt="stan lee image"
+													loading="lazy"
+													width="85px"
+													height="85px"
+												/>
+											</a>
+										</div>
+
+										<div class="mentor-info">
+											<a
+												tabindex="0"
+												href="http://localhost:8000/api/mentor/stan-lee/"
+											>
+												<div class="mentor-name">stan lee</div>
+											</a>
+											<div class="mentor-bio">
+												I'm the creator of Marvel Comics
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-cell mentor-display-htmx">
+									<div class="mentor-item">
+										<div class="mentor-img">
+											<a href="http://localhost:8000/api/mentor/tony-stark/">
+												<img
+													src="./Conceptual.fyi_files/tony_stark_mqRQMHi.jpg"
+													alt="Tony Stark image"
+													loading="lazy"
+													width="85px"
+													height="85px"
+												/>
+											</a>
+										</div>
+
+										<div class="mentor-info">
+											<a
+												tabindex="0"
+												href="http://localhost:8000/api/mentor/tony-stark/"
+											>
+												<div class="mentor-name">Tony Stark</div>
+											</a>
+											<div class="mentor-bio">
+												I'm the CEO of Stark Industries.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-gap"></div>
+						</div>
+					</div>
+					<!-- Top Categories Section -->
+					<div class="top-categories-section">
+						<div class="container-padding">
+							<div class="row">
+								<div class="col-12">
+									<div class="section-heading">Explore By Category</div>
+								</div>
+							</div>
+						</div>
+						<section
+							class="carousel carousel-subjects"
+							data-flickity='{  "groupCells": true, "wrapAround": false,  "pageDots": false, "prevNextButtons": true, "cellAlign": "left", "contain": true }'
+						>
+							<div class="top-level-categories carousel-cell">
+								<div class="tab-item">
+									<a
+										href="http://localhost:8000/?category=mechanical-engineering"
+									>
+										<div class="tab-name">Mechanical Engineering</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="top-level-categories carousel-cell">
+								<div class="tab-item">
+									<a
+										href="http://localhost:8000/?category=electrical-engineering"
+									>
+										<div class="tab-name">Electrical Engineering</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="top-level-categories carousel-cell">
+								<div class="tab-item">
+									<a href="http://localhost:8000/?category=mathematics">
+										<div class="tab-name">Mathematics</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="top-level-categories carousel-cell">
+								<div class="tab-item">
+									<a href="http://localhost:8000/?category=physics">
+										<div class="tab-name">Physics</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="top-level-categories carousel-cell">
+								<div class="tab-item">
+									<a href="http://localhost:8000/?category=chemistry">
+										<div class="tab-name">Chemistry</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="top-level-categories carousel-cell">
+								<div class="tab-item">
+									<a href="http://localhost:8000/?category=biology">
+										<div class="tab-name">Biology</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="top-level-categories carousel-cell">
+								<div class="tab-item">
+									<a href="http://localhost:8000/?category=computer-science">
+										<div class="tab-name">Computer Science</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="top-level-categories carousel-cell">
+								<div class="tab-item">
+									<a href="http://localhost:8000/?category=astronomy">
+										<div class="tab-name">Astronomy</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="top-level-categories carousel-cell">
+								<div class="tab-item">
+									<a href="http://localhost:8000/?category=geology">
+										<div class="tab-name">Geology</div>
+									</a>
+								</div>
+							</div>
+
+							<div class="top-level-categories carousel-cell">
+								<div class="tab-item">
+									<a href="http://localhost:8000/?category=psychology">
+										<div class="tab-name">Psychology</div>
+									</a>
+								</div>
+							</div>
+						</section>
+						<div class="section-gap"></div>
+					</div>
+					<!-- Top Concepts Section -->
+					<div class="concept-tags container" id="concept-tag-container">
+						<div class="row">
+							<div
+								hx-get="/api/concept_name_tags/"
+								hx-target="this"
+								hx-swap="innerHTML"
+								hx-trigger="load"
+								class=""
+							>
+								<div class="container-padding">
+									<div class="row">
+										<div class="col-12">
+											<div class="section-heading">Concepts</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-12">
+									<div
+										id="carouselExampleControls"
+										class="carousel carousel-dark slide"
+										data-bs-ride="carousel"
+									>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<div class="row">
+													<div class="col-md-3 d-flex justify-content-center align-center">
+														<div class="card" style="width: 18rem;">
+															<div
+																class="carousel-cell"
+																hx-get="/contacts/?page=2"
+																hx-trigger="click"
+																hx-swap="afterend"
+															>
+																<a href="http://localhost:8000/teacher/create/">
+																	<div class="concept-card-container">
+																		<div class="concept-card-img-container">
+																			<img
+																				src="./Conceptual.fyi_files/searching_for_water.png"
+																				alt=""
+																			/>
+
+																			<span
+																				class="concept-box"
+																				style="background-color: #ff0000;"
+																			>
+																			</span>
+																		</div>
+
+																		<div class="playlist-text">
+																			<div class="playlist-title">
+																				Add New Concept
+																			</div>
+
+																			<div class="playlist-description">
+																				Have you found a well taught concept?
+																			</div>
+																		</div>
+																	</div>
+																</a>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-md-3 d-flex justify-content-center align-center">
+														<div class="card" style="width: 18rem;">
+															<div
+																class="carousel-cell"
+																hx-get="/contacts/?page=2"
+																hx-trigger="click"
+																hx-swap="afterend"
+															>
+																<div class="concept-card-container">
+																	<div class="concept-card-img-container">
+																		<img
+																			src="./Conceptual.fyi_files/python_cubist_DMw6vgU_QOoNfCr.jpg"
+																			alt="None"
+																		/>
+
+																		<span
+																			class="concept-box"
+																			style="background-color: #ff0000;"
+																		>
+																			None
+																		</span>
+																	</div>
+
+																	<div class="playlist-text">
+																		<div class="playlist-title">
+																			Python Number Types
+																		</div>
+
+																		<div class="playlist-description">
+																			None
+																		</div>
+																	</div>
+
+																	<div class="concept-card-overlay-list">
+																		<ul>
+																			<li
+																				hx-get="/concept/python-number-types/?modality=video"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				video
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-number-types/?modality=audio"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				audio
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-number-types/?modality=interactive"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				interactive
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-number-types/?modality=game"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				game
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-number-types/?modality=text"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				text
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-md-3 d-flex justify-content-center align-center">
+														<div class="card" style="width: 18rem;">
+															<div
+																class="carousel-cell"
+																hx-get="/contacts/?page=2"
+																hx-trigger="click"
+																hx-swap="afterend"
+															>
+																<div class="concept-card-container">
+																	<div class="concept-card-img-container">
+																		<img
+																			src="./Conceptual.fyi_files/python-lists2_IE0LcCc_4Lo9Ouw.jpg"
+																			alt="None"
+																		/>
+
+																		<span
+																			class="concept-box"
+																			style="background-color: #ff0000;"
+																		>
+																			None
+																		</span>
+																	</div>
+
+																	<div class="playlist-text">
+																		<div class="playlist-title">
+																			Python Sets
+																		</div>
+
+																		<div class="playlist-description">
+																			None
+																		</div>
+																	</div>
+
+																	<div class="concept-card-overlay-list">
+																		<ul>
+																			<li
+																				hx-get="/concept/python-sets/?modality=video"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				video
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-sets/?modality=audio"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				audio
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-sets/?modality=interactive"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				interactive
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-sets/?modality=game"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				game
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-sets/?modality=text"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				text
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-md-3 d-flex justify-content-center align-center">
+														<div class="card" style="width: 18rem;">
+															<div
+																class="carousel-cell"
+																hx-get="/contacts/?page=2"
+																hx-trigger="click"
+																hx-swap="afterend"
+															>
+																<div class="concept-card-container">
+																	<div class="concept-card-img-container">
+																		<img
+																			src="./Conceptual.fyi_files/python-dictionaries_YhdcAIv_DMs96Ar.jpg"
+																			alt="None"
+																		/>
+
+																		<span
+																			class="concept-box"
+																			style="background-color: #ff0000;"
+																		>
+																			None
+																		</span>
+																	</div>
+
+																	<div class="playlist-text">
+																		<div class="playlist-title">
+																			Python Dictionaries
+																		</div>
+
+																		<div class="playlist-description">
+																			None
+																		</div>
+																	</div>
+
+																	<div class="concept-card-overlay-list">
+																		<ul>
+																			<li
+																				hx-get="/concept/python-dictionaries/?modality=video"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				video
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-dictionaries/?modality=audio"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				audio
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-dictionaries/?modality=interactive"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				interactive
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-dictionaries/?modality=game"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				game
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-dictionaries/?modality=text"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				text
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="carousel-item">
+												<div class="row">
+													<div class="col-md-3 d-flex justify-content-center align-center">
+														<div class="card" style="width: 18rem;">
+															<div
+																class="carousel-cell"
+																hx-get="/contacts/?page=2"
+																hx-trigger="click"
+																hx-swap="afterend"
+															>
+																<div class="concept-card-container">
+																	<div class="concept-card-img-container">
+																		<img
+																			src="./Conceptual.fyi_files/python-lists3_EJQilfq_dBoi4V4.jpg"
+																			alt="None"
+																		/>
+
+																		<span
+																			class="concept-box"
+																			style="background-color: #ff0000;"
+																		>
+																			None
+																		</span>
+																	</div>
+
+																	<div class="playlist-text">
+																		<div class="playlist-title">
+																			Python Lists
+																		</div>
+
+																		<div class="playlist-description">
+																			None
+																		</div>
+																	</div>
+
+																	<div class="concept-card-overlay-list">
+																		<ul>
+																			<li
+																				hx-get="/concept/python-lists/?modality=video"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				video
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-lists/?modality=audio"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				audio
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-lists/?modality=interactive"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				interactive
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-lists/?modality=game"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				game
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-lists/?modality=text"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				text
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="col-md-3 d-flex justify-content-center align-center">
+														<div class="card" style="width: 18rem;">
+															<div
+																class="carousel-cell"
+																hx-get="/contacts/?page=2"
+																hx-trigger="click"
+																hx-swap="afterend"
+															>
+																<div class="concept-card-container">
+																	<div class="concept-card-img-container">
+																		<img
+																			src="./Conceptual.fyi_files/python-strings-purple_3ubi63K_xJkW9jr.jpg"
+																			alt="None"
+																		/>
+
+																		<span
+																			class="concept-box"
+																			style="background-color: #ff0000;"
+																		>
+																			None
+																		</span>
+																	</div>
+
+																	<div class="playlist-text">
+																		<div class="playlist-title">
+																			Python Strings
+																		</div>
+
+																		<div class="playlist-description">
+																			None
+																		</div>
+																	</div>
+
+																	<div class="concept-card-overlay-list">
+																		<ul>
+																			<li
+																				hx-get="/concept/python-strings/?modality=video"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				video
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-strings/?modality=audio"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				audio
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-strings/?modality=interactive"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				interactive
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-strings/?modality=game"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				game
+																			</li>
+
+																			<li
+																				hx-get="/concept/python-strings/?modality=text"
+																				hx-swap="innerHTML"
+																				hx-trigger="click"
+																				hx-target="#concept-tag-container"
+																			>
+																				text
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<button
+												class="flickity-button flickity-prev-next-button previous"
+												type="button"
+												aria-label="Previous"
+												data-bs-target="#carouselExampleControls"
+												data-bs-slide="prev"
+											>
+												<svg class="flickity-button-icon" viewBox="0 0 100 100">
+													<path
+														d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+														class="arrow"
+													></path>
+												</svg>
+											</button>
+											<button
+												class="flickity-button flickity-prev-next-button next"
+												type="button"
+												aria-label="Next"
+												data-bs-target="#carouselExampleControls"
+												data-bs-slide="next"
+											>
+												<svg class="flickity-button-icon" viewBox="0 0 100 100">
+													<path
+														d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"
+														class="arrow"
+														transform="translate(100, 100) rotate(180) "
+													></path>
+												</svg>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="section-gap"></div>
+							</div>
+						</div>
+					</div>
+					<div class="playlist-section"></div>
+
+					<!-- Concept Continue Section -->
+					<!-- if they have taken concepts then display this section -->
+
+					<section class="course">
+						<div class="container">
+							<div class="container-padding">
+								<div class="row">
+									<div class="col-12">
+										<div class="section-heading">Continue</div>
+									</div>
+								</div>
+
+								<div class="row mt-3">
+									<div class="splide course-splide">
+										<div class="splide__arrows">
+											<button class="splide__arrow splide__arrow--prev">
+												<i class="bi bi-chevron-left"></i>
+											</button>
+											<button class="splide__arrow splide__arrow--next">
+												<i class="bi bi-chevron-right"></i>
+											</button>
+										</div>
+
+										<div class="splide__track">
+											<ul class="splide__list">
+												Check out the search bar at the top to find a concept
+												you are interested in.
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- End Concept Continue Section -->
+
+					<div class="section-gap"></div>
+
+					<!-- Most Recents Section -->
+
+					<!-- Video Section -->
+					<section class="video">
+						<div class="container">
+							<div class="container-padding">
+								<div class="row">
+									<div class="col-6">
+										<div class="video-sub-heading text-uppercase">Find out</div>
+
+										<div
+											class="video-heading text-uppercase my-3"
+											style="color: darkgrey;"
+										>
+											Why Conceptual is
+											<span class="text-primary">Different</span>
+										</div>
+
+										<div class="video-desc" style="color: darkgrey;">
+											How does a different structure affect the way we learn new
+											skills? Conceptual is based on concepts not courses. We
+											have broken up the learning process into smaller, more
+											manageable pieces.
+										</div>
+
+										<a
+											href="http://localhost:8000/#"
+											class="btn btn-lg btn-gradient-primary text-uppercase mt-5 fw-bold fs-4"
+											>Watch Now</a
+										>
+									</div>
+
+									<div class="col-6">
+										<div class="video-thumb">
+											<a
+												href="https://www.youtube.com/embed/MaKScf1UyT0"
+												class="video-lightbox"
+											>
+												<img
+													src="./Conceptual.fyi_files/05.png"
+													class="video-play"
+													alt="Video"
+													loading="lazy"
+													width="100"
+													height="100"
+												/>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- End Video Section -->
+
+					<div class="section-gap"></div>
+
+					<!-- Stat Section -->
+					<section class="stat">
+						<div class="container">
+							<div class="container-padding">
+								<div class="row">
+									<div class="col-3">
+										<div class="text-center">
+											<img
+												src="./Conceptual.fyi_files/06.png"
+												class="stat-icon"
+												alt="Stat"
+												loading="lazy"
+												width="50"
+												height="50"
+											/><br />
+											<span class="fs-3 fw-bold d-inline-block pt-2"></span
+											><br />
+											<span class="fs-6 text-uppercase d-inline-block pt-2"
+												>Total Concepts</span
+											><br />
+										</div>
+									</div>
+
+									<div class="col-3">
+										<div class="text-center">
+											<img
+												src="./Conceptual.fyi_files/07.png"
+												class="stat-icon"
+												alt="Stat"
+												loading="lazy"
+												width="50"
+												height="50"
+											/><br />
+											<span class="fs-3 fw-bold d-inline-block pt-2"></span
+											><br />
+											<span class="fs-6 text-uppercase d-inline-block pt-2"
+												>Students</span
+											><br />
+										</div>
+									</div>
+
+									<div class="col-3">
+										<div class="text-center">
+											<img
+												src="./Conceptual.fyi_files/08.png"
+												class="stat-icon"
+												alt="Stat"
+												loading="lazy"
+												width="50"
+												height="50"
+											/><br />
+											<span class="fs-3 fw-bold d-inline-block pt-2"></span
+											><br />
+											<span class="fs-6 text-uppercase d-inline-block pt-2"
+												>Mentors</span
+											><br />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- End Stat Section -->
+
+					<div class="section-gap"></div>
+
+					<!-- FAQ Section -->
+					<section class="faq">
+						<div class="container">
+							<div class="container-padding">
+								<div class="row">
+									<div class="col-12 text-center">
+										<span class="fs-1 fw-bold">FAQ'S</span>
+									</div>
+								</div>
+
+								<div class="row mt-5">
+									<div class="col-6 px-5 py-4">
+										<div class="fs-5 fw-bold">What info is here?</div>
+										<div class="mt-3">
+											<small
+												>Very little is on our website. We keep a collection of
+												things you can get to on other sites on the internet. We
+												help you keep track of what you have learned, so you
+												don't repeat previous knowledge (unless you
+												forgot)</small
+											>
+										</div>
+									</div>
+
+									<div class="col-6 px-5 py-4">
+										<div class="fs-5 fw-bold">What is this website?</div>
+										<div class="mt-3">
+											<small
+												>Teachers are inspired to teach one thing to people. We
+												organize a collection of those.</small
+											>
+										</div>
+									</div>
+
+									<div class="col-6 px-5 py-4">
+										<div class="fs-5 fw-bold">Why choose Conceptual?</div>
+										<div class="mt-3">
+											<small
+												>We strive to give you the most direct, complete, and
+												memorable instruction. You will be able to learn a topic
+												narrowly, deeply, or broadly depending on your
+												time/effort constraints.
+											</small>
+										</div>
+									</div>
+
+									<div class="col-6 px-5 py-4">
+										<div class="fs-5 fw-bold">How much does it cost?</div>
+										<div class="mt-3">
+											<small
+												>There is a wealth of free concepts. Feel free to see
+												how far you want to get on $0. The concept prices are
+												set by the teachers. Tell us what you want to study and
+												we'll tell you home much or little it possibly
+												costs</small
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- End FAQ Section -->
+				</main>
+			</div>
+		</div>
+		<!-- /container -->
+
+		<footer class="footer p-5">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-4">
+						<a href="http://localhost:8000/about/" class="footer-link"
+							>About Us</a
+						>
+						<a href="http://localhost:8000/#" class="footer-link">Contact Us</a>
+					</div>
+
+					<div class="col-4">
+						<a href="http://localhost:8000/#" class="footer-link">Careers</a>
+						<a href="http://localhost:8000/#" class="footer-link">Blog</a>
+					</div>
+
+					<div class="col-4">
+						<a href="http://localhost:8000/#" class="footer-link"
+							>Privacy policy</a
+						>
+						<a href="http://localhost:8000/#" class="footer-link"
+							>Help and support</a
+						>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="./Conceptual.fyi_files/popper.min.js"
+			integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="./Conceptual.fyi_files/bootstrap(1).min.js"
+			integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="./Conceptual.fyi_files/bootstrap.bundle.min.js"
+			integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="./Conceptual.fyi_files/jquery.min.js"></script>
+		<script src="./Conceptual.fyi_files/flickity.pkgd.min.js"></script>
+	</body>
+</html>

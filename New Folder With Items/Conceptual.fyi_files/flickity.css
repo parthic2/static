@@ -1,0 +1,29 @@
+  .flickity-page-dots {
+    display: none;
+  }
+
+  /*Slider*/
+.splide__arrow {
+  position: absolute;
+  z-index: 9999;
+  display: inline-block;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: var(--app-primary);
+  background: #E5E5E5 !important;
+}
+
+.splide__arrow--prev {
+  padding: 3px 0px 0px 0px;
+  left: -8px;
+}
+
+.splide__arrow--next {
+  padding: 3px 0px 0px 5px;
+  right: -8px;
+}
